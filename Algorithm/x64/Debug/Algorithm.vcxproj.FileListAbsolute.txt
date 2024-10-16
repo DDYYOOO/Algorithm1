@@ -1,1 +1,2 @@
 C:\Users\Administrator\source\repos\Algorithm\x64\Debug\Algorithm.exe
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\x64\Debug\Algorithm.exe

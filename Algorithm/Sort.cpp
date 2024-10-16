@@ -14,17 +14,26 @@ void BubbleSort(int list[], int n)
 				std::swap(list[j], list[j + 1]);
 		}
 	}
+}
 
-	// for(int i = 1; i < n; i++)	버블 정렬 구현
-	
-
+void BubbleSort2(int list[], int n)
+{
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - 1; j++)			
+		{
+			if (list[j] > list[j + 1])
+				std::swap(list[j], list[j + 1]);
+		}
+	}
 }
 
 void BubbleExample()
 {
 	int list[] = { 7, 5, 3, 6, 9 };
 
-	BubbleSort(list, 5);
+	//BubbleSort(list, 5);
+	BubbleSort2(list, 5);
 
 	for (int i = 0; i < 5; i++)
 	{
@@ -68,4 +77,65 @@ void SelectionExample()
 	{
 		std::cout << list[i] << " ";
 	}
+}
+
+void InsertionSort(int list[], int n)
+{
+	int j = 0;
+	for (int i = 0; i < n - 1; i++)
+	{
+		j = i;
+		while (list[j] > list[j + 1] && j >= 0)
+		{
+			std::swap(list[j], list[j + 1]);
+			j--;
+		}
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << list[i] << " ";
+	}
+}
+
+void InsertionSortExample()
+{
+	int list[] = { 1, 5, 10, 4, 7, 6, 3};
+
+	InsertionSort(list, 7);
+}
+
+void CountSort()
+{
+	int arr[15] = {3, 0, 4, 0, 2,
+				  1, 2, 3, 4, 4,
+				  2, 3, 1, 0, 2};
+
+	int count[5];
+
+	for (int i = 0; i < 5; i++)
+	{
+		count[i] = 0;
+	}
+
+	for (int i = 0; i < 15; i++)
+	{
+		count[arr[i]]++;
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+		if (count[i] != 0)
+		{
+			for (int j = 0; j < count[i]; j++)
+			{
+				std::cout << i + 1 << " ";
+			}
+		}
+	}
+}
+
+void CountSortExample()
+{
+
 }

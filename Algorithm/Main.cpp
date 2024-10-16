@@ -8,4 +8,8 @@ int main()
 	BubbleExample();
 	std::cout << std::endl;
 	SelectionExample();
+	std::cout << std::endl;
+	InsertionSortExample();
+	std::cout << std::endl;
+	CountSort();
 }
