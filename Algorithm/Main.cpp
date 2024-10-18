@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include"Sort.h"
 #include"InputReference.h"
 #include"Pow.h"
@@ -23,13 +24,33 @@ int main()
 
 	std::cout << "º´ÇÕ Á¤·Ä" << std::endl;
 	
-	int list[8] = { 7, 6, 5, 8, 3, 5, 9, 1 };
+	//int list[8] = { 7, 6, 5, 8, 3, 5, 9, 1 };
+	//
+	//MergeSort(list, 0, 7);
+	//
+	//for (int i = 0; i < 8; i++)
+	//{
+	//	std::cout << list[i] << " ";
+	//}
 
-	MergeSort(list, 0, 7);
+	std::cout << "Äü ¼±ÅÃ" << std::endl;
 
-	for (int i = 0; i < 8; i++)
+	srand(time(0));
+
+	std::vector<int> someVec = { 10, 5, 8, 2, 7, 4 };
+
+	//std::cout << QuickSelect(someVec, 2) << std::endl;
+
+	std::cout << "Äü Á¤·Ä" << std::endl;
+
+	QuickSort(someVec, 0, someVec.size() - 1);
+
+	for (int num : someVec)
 	{
-		std::cout << list[i] << " ";
+		std::cout << num << " ";
 	}
+
+
+
 
 }
