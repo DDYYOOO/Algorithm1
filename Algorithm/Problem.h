@@ -50,16 +50,32 @@ void Case003()
 	{
 		if(n == 1)
 			cout << cnt << ' ' << target << '\n';
+
+		hanoi(n - 1, cnt, target, other);
 		// n - 1츨 other위치게 옮김
 		// 가장 큰 탑을 목표위치게 옮김
 		std::cout << cnt << ' ' << target << '\n';
 		// n- 1 층 other 시작 점인 탑 -> 목표지점 옮김
+		hanoi(n - 1, other, cnt, target);
 
 	}
 
 	int hanoiCount(int n)
 	{
+		if (n == 1) return 1;
 
+		// n - 1층 시간 x 2
+		return 2 = hanoiCount(n - 1) + 1;
+	}
+
+	int Main()
+	{
+		int n;
+		std::cin >> n;
+
+		std::cout << hanoiCount(n);
+
+		hanoi(n, 1, 2, 3);
 	}
 }
 
