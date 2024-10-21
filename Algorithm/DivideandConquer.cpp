@@ -144,12 +144,12 @@ int QuickSelect(std::vector<int>& nums, int k)
 	else if(leftidx < length - k)	// 피벗을 위치가 찾는 위치보다 작은 경우(오른쪽 범위 검색)
 	{
 		std::vector<int> rightPart(nums.begin() + leftidx + 1, nums.end());
-		QuickSelect(rightPart, k);
+		return QuickSelect(rightPart, k);
 	}
 	else if (leftidx > length - k)	// 피벗을 위치가 찾는 위치보다 큰 경우(왼쪽 범위 검색)
 	{
 		std::vector<int> leftPart(nums.begin(), nums.begin() + leftidx);
-		QuickSelect(leftPart, k - (length - leftidx));
+		return QuickSelect(leftPart, k - (length - leftidx));
 	}
 
 	// k번째 인덱스의 그 수를 return
