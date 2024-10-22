@@ -1,10 +1,12 @@
 #include<iostream>
 #include<algorithm>
+#include"TimeChecker.h"
 #include"Sort.h"
 #include"InputReference.h"
 #include"Pow.h"
 #include"DivideandConquer.h"
 #include"Problem.h"
+#include"DynamicPrograming.h"
 
 int main()
 {
@@ -25,14 +27,14 @@ int main()
 	
 	std::cout << "병합 정렬" << std::endl;
 	
-	//int list[8] = { 7, 6, 5, 8, 3, 5, 9, 1 };
-	//
-	//MergeSort(list, 0, 7);
-	//
-	//for (int i = 0; i < 8; i++)
-	//{
-	//	std::cout << list[i] << " ";
-	//}
+	int list[8] = { 7, 6, 5, 8, 3, 5, 9, 1 };
+	
+	MergeSort(list, 0, 7);
+	
+	for (int i = 0; i < 8; i++)
+	{
+		std::cout << list[i] << " ";
+	}
 	
 	std::cout << "퀵 선택" << std::endl;
 	
@@ -53,7 +55,19 @@ int main()
 
 	std::cout << std::endl;
 
-	
-	Case002();
+	//Case002();
 
+	system("cls");
+
+	std::cout << "피보나치 수열(재귀 방식)" << std::endl;
+
+	int count = 40;
+
+	std::cout << "피보나치 수 결과 : " << Fibonacci(count) << std::endl;
+	std::cout << "피보나치 수 시간 : " << measureExecutionTime(Fibonacci, count) << "ms" << std::endl;
+
+	std::cout << "피보나치 수열(동적 계획법)" << std::endl;
+
+	std::cout << "피보나치 수 결과 : " << Fibonacci(count) << std::endl;
+	std::cout << "피보나치 수 시간 : " << measureExecutionTime(Fibonacci_DP, count) << "ms" << std::endl;
 }

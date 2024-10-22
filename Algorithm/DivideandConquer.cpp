@@ -8,7 +8,7 @@ void MergeSort(int list[], int left, int right)
 {
 	if (left < right)
 	{
-		int mid = left + right / 2;
+		int mid = (left + right) / 2;
 		// 왼쪽 정렬
 		MergeSort(list, left, mid);
 		// 오른쪽 정렬
@@ -38,7 +38,7 @@ void Merge(int list[], int left, int mid, int right)
 			//sorted[key] = list[leftidx];
 			leftidx++;
 		}
-		else if (list[leftidx] >= list[rightidx])
+		else if (list[leftidx] > list[rightidx])
 		{
 			sorted.push_back(list[rightidx]);
 			//sorted[key] = list[rightidx];

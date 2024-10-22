@@ -46,36 +46,36 @@ void Case002()
 
 void Case003()
 {
-	void hanoi(int n, int cnt, int other, int target)
-	{
-		if(n == 1)
-			cout << cnt << ' ' << target << '\n';
-
-		hanoi(n - 1, cnt, target, other);
-		// n - 1Ãú otherÀ§Ä¡°Ô ¿Å±è
-		// °¡Àå Å« Å¾À» ¸ñÇ¥À§Ä¡°Ô ¿Å±è
-		std::cout << cnt << ' ' << target << '\n';
-		// n- 1 Ãş other ½ÃÀÛ Á¡ÀÎ Å¾ -> ¸ñÇ¥ÁöÁ¡ ¿Å±è
-		hanoi(n - 1, other, cnt, target);
-
-	}
-
-	int hanoiCount(int n)
-	{
-		if (n == 1) return 1;
-
-		// n - 1Ãş ½Ã°£ x 2
-		return 2 = hanoiCount(n - 1) + 1;
-	}
-
-	int Main()
-	{
-		int n;
-		std::cin >> n;
-
-		std::cout << hanoiCount(n);
-
-		hanoi(n, 1, 2, 3);
-	}
+	//void hanoi(int n, int cnt, int other, int target)
+	//{
+	//	if(n == 1)
+	//		cout << cnt << ' ' << target << '\n';
+	//
+	//	hanoi(n - 1, cnt, target, other);
+	//	// n - 1Ãú otherÀ§Ä¡°Ô ¿Å±è
+	//	// °¡Àå Å« Å¾À» ¸ñÇ¥À§Ä¡°Ô ¿Å±è
+	//	std::cout << cnt << ' ' << target << '\n';
+	//	// n- 1 Ãş other ½ÃÀÛ Á¡ÀÎ Å¾ -> ¸ñÇ¥ÁöÁ¡ ¿Å±è
+	//	hanoi(n - 1, other, cnt, target);
+	//
+	//}
+	//
+	//int hanoiCount(int n)
+	//{
+	//	if (n == 1) return 1;
+	//
+	//	// n - 1Ãş ½Ã°£ x 2
+	//	return 2 = hanoiCount(n - 1) + 1;
+	//}
+	//
+	//int Main()
+	//{
+	//	int n;
+	//	std::cin >> n;
+	//
+	//	std::cout << hanoiCount(n);
+	//
+	//	hanoi(n, 1, 2, 3);
+	//}
 }
 
