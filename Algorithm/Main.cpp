@@ -11,7 +11,7 @@
 int main()
 {
 	std::cout << "ad" << std::endl;
-
+	
 	BubbleExample();
 	std::cout << std::endl;
 	SelectionExample();
@@ -52,22 +52,30 @@ int main()
 	{
 		std::cout << num << " ";
 	}
-
+	
 	std::cout << std::endl;
-
+	
 	//Case002();
-
+	
 	system("cls");
-
+	
 	std::cout << "피보나치 수열(재귀 방식)" << std::endl;
-
-	int count = 40;
-
+	
+	int count = 10;
+	
 	std::cout << "피보나치 수 결과 : " << Fibonacci(count) << std::endl;
 	std::cout << "피보나치 수 시간 : " << measureExecutionTime(Fibonacci, count) << "ms" << std::endl;
-
+	
 	std::cout << "피보나치 수열(동적 계획법)" << std::endl;
-
+	
 	std::cout << "피보나치 수 결과 : " << Fibonacci(count) << std::endl;
 	std::cout << "피보나치 수 시간 : " << measureExecutionTime(Fibonacci_DP, count) << "ms" << std::endl;
+	
+	std::cout << "계단 오르기 문제(메모이제이션)" << std::endl;
+	
+	std::vector<int> stairs = { 10, 20, 15, 25, 10, 20 };
+	
+	std::cout << "계단 수가 " << stairs.size() << "인 최대의 수 : " << StairCount(stairs);
+
+	//Case004();
 }

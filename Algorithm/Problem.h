@@ -79,3 +79,19 @@ void Case003()
 	//}
 }
 
+
+void Case004()
+{
+	const int n = 3;
+
+	int list[n] = { -1 };
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> list[i];
+		std::cout << list[i] << std::endl;
+	}
+
+
+}
+
