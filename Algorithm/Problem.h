@@ -23,75 +23,17 @@ int QuickSlelect(std::vector<int> nums, int n)
 
 void Case002()
 {
-	std::vector<int> vec;
-	int s;	// 점수
-	int n;	// 응시자
-	int x;  // x번째 숫자
-
-	std::cin >> n;
-	std::cin >> x;
-
-	for (int i = 0; i < n; i++)
-	{
-		std::cin >> s;
-		vec.push_back(s);
-	}
-
-	for (int num : vec)
-	{
-		std::cout << num << " ";
-	}
 
 }
 
 void Case003()
 {
-	//void hanoi(int n, int cnt, int other, int target)
-	//{
-	//	if(n == 1)
-	//		cout << cnt << ' ' << target << '\n';
-	//
-	//	hanoi(n - 1, cnt, target, other);
-	//	// n - 1츨 other위치게 옮김
-	//	// 가장 큰 탑을 목표위치게 옮김
-	//	std::cout << cnt << ' ' << target << '\n';
-	//	// n- 1 층 other 시작 점인 탑 -> 목표지점 옮김
-	//	hanoi(n - 1, other, cnt, target);
-	//
-	//}
-	//
-	//int hanoiCount(int n)
-	//{
-	//	if (n == 1) return 1;
-	//
-	//	// n - 1층 시간 x 2
-	//	return 2 = hanoiCount(n - 1) + 1;
-	//}
-	//
-	//int Main()
-	//{
-	//	int n;
-	//	std::cin >> n;
-	//
-	//	std::cout << hanoiCount(n);
-	//
-	//	hanoi(n, 1, 2, 3);
-	//}
+	
 }
 
 
 void Case004()
 {
-	const int n = 3;
-
-	int list[n] = { -1 };
-
-	for (int i = 0; i < n; i++)
-	{
-		std::cin >> list[i];
-		std::cout << list[i] << std::endl;
-	}
-
 
 }
 

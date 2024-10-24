@@ -55,8 +55,6 @@ int main()
 	
 	std::cout << std::endl;
 	
-	//Case002();
-	
 	system("cls");
 	
 	std::cout << "피보나치 수열(재귀 방식)" << std::endl;
@@ -77,5 +75,5 @@ int main()
 	
 	std::cout << "계단 수가 " << stairs.size() << "인 최대의 수 : " << StairCount(stairs);
 
-	//Case004();
+
 }

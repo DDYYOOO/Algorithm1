@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="DivideandConquer.h" />
     <ClInclude Include="DynamicPrograming.h" />
+    <ClInclude Include="Greedy.h" />
     <ClInclude Include="InputReference.h" />
     <ClInclude Include="lectures.h" />
     <ClInclude Include="Pow.h" />
