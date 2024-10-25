@@ -135,6 +135,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructure.h" />
     <ClInclude Include="DivideandConquer.h" />
     <ClInclude Include="DynamicPrograming.h" />
     <ClInclude Include="Greedy.h" />
