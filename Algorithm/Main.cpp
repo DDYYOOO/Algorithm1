@@ -7,6 +7,7 @@
 #include"DivideandConquer.h"
 #include"Problem.h"
 #include"DynamicPrograming.h"
+#include"BackTracking.h"
 
 int main()
 {
@@ -74,6 +75,12 @@ int main()
 	std::vector<int> stairs = { 10, 20, 15, 25, 10, 20 };
 	
 	std::cout << "계단 수가 " << stairs.size() << "인 최대의 수 : " << StairCount(stairs);
+	std::cout << std::endl;
 
+	std::cout << "순열" << std::endl;
+	Permutation::Case01();
+
+	std::cout << "조합" << std::endl;
+	Combine::Case02();
 
 }

@@ -1,4 +1,4 @@
 ﻿  Main.cpp
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(41,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(49,39): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(42,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(50,39): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Algorithm.vcxproj -> C:\Users\Administrator\Desktop\Algorithm1\Algorithm\x64\Debug\Algorithm.exe
