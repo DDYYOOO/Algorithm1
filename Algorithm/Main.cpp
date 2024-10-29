@@ -8,6 +8,8 @@
 #include"Problem.h"
 #include"DynamicPrograming.h"
 #include"BackTracking.h"
+#include"Array2D(two dimension).h"
+#include"Graph.h"
 
 int main()
 {
@@ -82,5 +84,15 @@ int main()
 
 	std::cout << "а╤гу" << std::endl;
 	Combine::Case02();
+
+	system("cls");
+
+	//Board::Case1();
+
+	Board::Case2();
+
+	Board::Case3();
+
+	//Virus::Case1();
 
 }
