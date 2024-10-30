@@ -89,10 +89,12 @@ int main()
 
 	//Board::Case1();
 
-	Board::Case2();
+	//Board::Case2();
 
-	Board::Case3();
+	//Board::Case3();
 
 	//Virus::Case1();
+
+	GraphVec::Print();
 
 }
