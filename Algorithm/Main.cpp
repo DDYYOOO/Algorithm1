@@ -95,6 +95,8 @@ int main()
 
 	//Virus::Case1();
 
-	GraphVec::Print();
+	//GraphVec::Print();
+
+	InputGraph::Show();
 
 }

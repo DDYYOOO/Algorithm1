@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include<string>	
 
 using namespace std;
 
@@ -97,6 +98,45 @@ namespace GraphVec
 				{
 					cout << "0";	// 0공백 숫자 1부터 시작
 				}
+			}
+			cout << '\n';
+		}
+	}
+}
+
+namespace InputGraph
+{
+	// 문자열 형태로 2차원 배열 표현
+
+	// string : char 배열
+
+	const int n = 4;
+	const int m = 6;
+
+	vector<vector<int>> graph(n, vector<int>(m, 0));	// 4x6 배열 0할당
+
+	void Show()
+	{
+		//cin >> 4 >> 6;
+
+		// 입력
+		for (int i = 0; i < n; i++)
+		{
+			string inputString;
+			cin >> inputString;
+
+			for (int j = 0; j < m; j++)
+			{
+				graph[i][j] = inputString[j] - '0';
+			}
+		}
+
+		// 출력
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0; j < m; j++)
+			{
+				cout << graph[i][j] << ' ';
 			}
 			cout << '\n';
 		}
