@@ -100,9 +100,10 @@ int main()
 
 	//InputGraph::Show();
 
-	InputWeight::Show();
+	//InputWeight::Show();
 
-	InputWeight::Show2();
+	//InputWeight::Show2();
 
+	InputGraph::GraphShow();
 
 }

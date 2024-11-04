@@ -6,6 +6,8 @@
 #include<vector>
 #include<algorithm>
 
+#define INF 9999
+
 using namespace std;
 
 namespace InputWeight
@@ -112,5 +114,35 @@ namespace Union_Find
 			return false;
 
 		return true;
+	}
+}
+
+namespace InputGraph
+{
+	// 그래프 코드 구현 방법
+	
+	void GraphShow()
+	{
+		int size = 7;
+		
+		int graph[7][7] = 
+		{
+			{  0,   67, INF,  28,  17, INF,  12},
+			{  67,   0, INF,  24,  62, INF, INF},
+			{ INF, INF, 0,   INF,  20,  37, INF},
+			{  28,  24, INF,   0, INF, INF,  13},
+			{  17,  62, 20,  INF,   0,  45,  73},	
+			{ INF, INF, 37,  INF,  45,   0, INF},	
+			{  12, INF, INF,  13,  73, INF,   0}
+		};
+
+		for (int i = 0; i < 7; i++)
+		{
+			for (int j = 0; j < 7; j++)
+			{
+				cout << graph[i][j] << ' ';
+			}
+			cout << '\n';
+		}
 	}
 }
