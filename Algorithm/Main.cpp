@@ -11,6 +11,7 @@
 #include"Array2D(two dimension).h"
 #include"Graph.h"
 #include"MST.h"
+#include"AStar.h"
 
 int main()
 {
@@ -104,6 +105,9 @@ int main()
 
 	//InputWeight::Show2();
 
-	InputGraph::GraphShow();
+	//InputGraph::GraphShow();
+
+	FoundPath::FindPathShow();
+
 
 }
