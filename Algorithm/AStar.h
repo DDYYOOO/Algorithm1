@@ -39,9 +39,9 @@ namespace FoundPath
 		vector<Node*> neighbors;
 
 		// 위 -> 아래 -> 오 -> 왼 검색
-		int dx[] = {0, 0, 1 -1};	
-		int dy[] = {-1, 1, 0, 0};
-		
+		int dx[] = { 0, 0, 1 - 1 };
+		int dy[] = { -1, 1, 0, 0 };
+
 		int n = graph.size();
 
 		for (int i = 0; i < 4; i++)

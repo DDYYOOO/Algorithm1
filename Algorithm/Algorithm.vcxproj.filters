@@ -80,5 +80,11 @@
     <ClInclude Include="AStar.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="AStar(solve).h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Regular Expression.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,7 +11,10 @@
 #include"Array2D(two dimension).h"
 #include"Graph.h"
 #include"MST.h"
-#include"AStar.h"
+//#include"AStar.h"
+#include"AStar(solve).h"
+#include"Regular Expression.h"
+
 
 int main()
 {
@@ -107,7 +110,9 @@ int main()
 
 	//InputGraph::GraphShow();
 
-	FoundPath::FindPathShow();
+	//FoundPath::FindPathShow();
 
+	FoundPath2::GetBoard();
 
+	Express();
 }

@@ -1,16 +1,7 @@
 ﻿  Main.cpp
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\AStar.h(45,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\AStar(solve).h(41,19): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 'Main.cpp'을(를) 컴파일하는 중)
   
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\AStar.h(63,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 'Main.cpp'을(를) 컴파일하는 중)
-  
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,19): error C2338: static_assert failed: 'container adaptors require consistent types'
-  (소스 파일 'Main.cpp'을(를) 컴파일하는 중)
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,19):
-  템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
-  	C:\Users\Administrator\Desktop\Algorithm1\Algorithm\AStar.h(64,52):
-  	컴파일되는 클래스 템플릿 인스턴스화 'std::priority_queue<FoundPath::Node,std::vector<FoundPath::Node *,std::allocator<FoundPath::Node *>>,FoundPath::CompareNode>'에 대한 참조를 확인하세요.
-  
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(46,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(54,39): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(49,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Administrator\Desktop\Algorithm1\Algorithm\Main.cpp(57,39): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Algorithm.vcxproj -> C:\Users\Administrator\Desktop\Algorithm1\Algorithm\x64\Debug\Algorithm.exe

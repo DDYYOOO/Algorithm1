@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array2D%28two dimension%29.h" />
+    <ClInclude Include="AStar(solve).h" />
     <ClInclude Include="AStar.h" />
     <ClInclude Include="BackTracking.h" />
     <ClInclude Include="DataStructure.h" />
@@ -148,6 +149,7 @@
     <ClInclude Include="MST.h" />
     <ClInclude Include="Pow.h" />
     <ClInclude Include="Problem.h" />
+    <ClInclude Include="Regular Expression.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="TimeChecker.h" />
   </ItemGroup>
